@@ -99,7 +99,8 @@ form.sign-up-form{
 .input-field input:placeholder{
     color: #acaaca;
     font-weight: bold;
-    cursor: pointer;
+    cursor: 
+    ;
 }
 .btn-login{
     width: 150px;
@@ -144,13 +145,12 @@ form.sign-up-form{
     color: red;
     border-color: red;
 }
-/* .panel-container{
+.panel-container{
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: ;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -162,7 +162,7 @@ form.sign-up-form{
     text-align: center;
     z-index: 7;
 
-}
+} 
 .panel-left{
     pointer-events: all;
     padding: 3rem 17% 2rem 12%;
@@ -170,7 +170,7 @@ form.sign-up-form{
 .panel-right{
     pointer-events: all;
     padding: 3rem 17% 2rem 12%;
-}
+} 
 .panel.content{
     color: #fff;
     transition:.9s .6s ease-in-out;
@@ -262,4 +262,4 @@ form.sign-up-form {
     position: relative; 
     left: 0; 
     transition: 0.6s ease-in-out; 
-} */
+} 
