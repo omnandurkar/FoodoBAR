@@ -40,10 +40,11 @@ body{
     cursor: default;
     opacity: 0;
     animation: slideRight 1s ease forwards;
+    margin-left: -11px;
 }
 
 .navbar{
-    margin-left: -900px;
+    margin-left: -100px;
 }
 
 .navbar a{
@@ -62,6 +63,14 @@ body{
 .navbar a:hover,
 .navbar a.active{
     color:  rgb(255, 0, 0);
+}
+
+.header .nav-btn {
+    color: red;
+    background-color: white;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 20px  rgb(240, 234, 234)
+    
 }
 
 .home{
