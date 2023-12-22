@@ -190,7 +190,7 @@ body{
     padding: 12px 28px;
     background:  rgb(255, 0, 0);
     border-radius: 40px;
-    box-shadow: 0 0 10px  rgb(255, 0, 0);
+    /* box-shadow: 0 0 10px  rgb(255, 0, 0); */
     font-size: 16px;
     color: #1f242d;
     letter-spacing: 1px;
