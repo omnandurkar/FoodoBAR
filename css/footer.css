@@ -37,6 +37,14 @@ body{
     margin-bottom: 10px;
     text-align: justify;
     position: relative;
+    cursor: pointer;
+}
+span{
+    text-decoration: none;
+    color: #fff;
+}
+a{
+    text-decoration: none;
 }
 i{
     color: red;
@@ -70,8 +78,30 @@ i{
     font-size: 1.0rem;
     margin-bottom: 10px;
     text-align: justify;
+    position: relative;
+    cursor: pointer;
 
     
+}
+.footer-text1::before{
+    content: "";
+    position: absolute;
+    background-color: red;
+    bottom: 0.3rem;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition: 0.2s ease-in-out;
+}
+.footer-text1:hover::before{
+    content: "";
+    position: absolute;
+    background-color: red;
+    bottom: -0.3rem;
+    left: 0.1rem;
+    height: 0.3px;
+    width: 50%;
+    border-radius: 5px;
 }
 .footer-text2{
     text-align: center;
@@ -79,7 +109,32 @@ i{
     font-size: 1.0rem;
     margin-bottom: 10px;
     text-align: justify;
+    cursor: pointer;
+    position: relative;
 }
+.footer-text2::before{
+    content: "";
+    position: absolute;
+    background-color: red;
+    bottom: 0.3rem;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition: 0.2s ease-in-out;
+    /* width: fit-content; */
+}
+.footer-text2:hover::before{
+    content: "";
+    position: absolute;
+    background-color: red;
+    bottom: -0.3rem;
+    left: 0.5rem;
+    height: 0.3px;
+    width: 50%;
+    border-radius: 5px;
+    
+}
+
 .footer-text3{
     text-align: center;
     text-align: center;
@@ -87,5 +142,26 @@ i{
     font-size: 1.0rem;
     margin-bottom: 10px;
     text-align: justify;
+    position: relative;
+}
+.footer-text3::before{
+    content: "";
+    position: absolute;
+    background-color: red;
+    bottom: 0.3rem;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition: 0.2s ease-in-out;
+}
+.footer-text3:hover::before{
+    content: "";
+    position: absolute;
+    background-color: red;
+    bottom: -0.3rem;
+    left: 0.1rem;
+    height: 0.3px;
+    width: 50%;
+    border-radius: 5px;
 }
 

@@ -66,11 +66,11 @@ body{
 
 .navbar a:hover,
 .navbar a.active{
-    color:  rgb(255, 0, 0);
+    color:  #ee2737;
 }
 
 .header .nav-btn {
-    color: red;
+    color: #ee2737;
     background-color: white;
     /* border: 1px solid black; */
     box-shadow: 0 0 20px  rgb(240, 234, 234)
@@ -107,7 +107,7 @@ body{
 }
 
 .home-content h3 span{
-    color: rgb(255, 0, 0);
+    color: #ee2737;
 
 }
 
@@ -168,10 +168,10 @@ body{
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid rgb(255, 0, 0);
+    border: 2px solid #ee2737;
     border-radius: 50%;
     font-size: 20px;
-    color:  rgb(255, 0, 0);
+    color:  #ee2737;
     text-decoration: none;
     margin: 30px 15px 30px 0;
     opacity: 0;
@@ -180,19 +180,21 @@ body{
 }
 
 .social-media a:hover{
-    background:  rgb(255, 0, 0);
-    color: #1f242d;
-    box-shadow: 0 0 20px  rgb(255, 0, 0);
+    /* background:  rgb(255, 0, 0); */
+    /* color: #1f242d; */
+    color: white;
+    box-shadow: 0 0 20px  #ee2737;
 }
 
 .btn{
     display: inline-block;
     padding: 12px 28px;
-    background:  rgb(255, 0, 0);
+    background:  #ee2737;
     border-radius: 40px;
     /* box-shadow: 0 0 10px  rgb(255, 0, 0); */
     font-size: 16px;
-    color: #1f242d;
+    /* color: #1f242d; */
+    color: white;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
@@ -200,6 +202,13 @@ body{
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
     cursor: pointer;
+}
+
+.btn:hover{
+    background-color: white;
+    color: #ee2737;
+    border: 1px solid #ee2737;
+    box-shadow: 0 0 10px  #ee2737;
 }
 
 @keyframes slideRight {
@@ -399,6 +408,7 @@ body{
     background-color: #ffffff;
     /* background-color: rgb(241, 239, 215); */
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .card-img img{
@@ -416,4 +426,20 @@ body{
 .smenu-card1 p{
     margin-bottom: 20px;
     padding:10px;
+}
+
+.smenu-card1:hover{
+    color: white;
+    background-color: #ee2737;
+    
+    box-shadow: 5px 7px 20px 0px #ec7983;
+    transition: 0.4s ease-in;
+    transform: scale(0.9);
+    
+}
+
+.smenu-card1 button:hover{
+    background-color: white;
+    
+    transition: 0.5s ease-in;
 }
