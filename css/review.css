@@ -22,20 +22,47 @@
     }
 
     .pic{
-        height:120px;
+        height:140px;
         width: 100%;
         
     }
 
     .pic-text{
         position: absolute;
-        top:50%;
+        top:40%;
         left: 50%;
         font-size: 30px;
         transform: translate(-50%, -50%);
         color: white;
         font-family: 'Rubik', sans-serif;
     }
+
+    .button-head{
+        position: absolute;
+        top:60%;
+        left: 50%;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-family: 'Rubik', sans-serif;
+        
+    }
+
+    .btn2{
+        background-color: red;
+        color: white;
+        height: 30px;
+        width: auto;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .btn2:hover{
+        background-color: red;
+        box-shadow: 3px 3px rgb(236, 88, 88) ;
+        cursor: pointer;
+    }
+
 
     
     .container{
@@ -75,7 +102,7 @@
     
     .img{
         border-radius: 30px;
-        border:2px solid blanchedalmond;
+        border:3px solid red;
         height: 200px;
         width: 250px;
         
@@ -84,8 +111,9 @@
 
     .img:hover{
         border-radius: 30px;
-        border:2px solid rgb(233, 124, 124);
-        box-shadow: 2px 1px 2px 2px  rgb(233, 124, 124);
+        border:2px solid red;
+        box-shadow: 2px 1px 2px 2px  red;
+        cursor: pointer;
 
     }
 
@@ -110,9 +138,10 @@
 
     .btn:hover{
        box-shadow: 2px 2px rgb(248, 60, 60);
-       background-color:rgb(248, 60, 60);
+       background-color:red;
         color: white;
         border-radius: 5px;
+        cursor: pointer;
         
 
     }
