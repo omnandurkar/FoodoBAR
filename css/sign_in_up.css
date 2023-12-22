@@ -41,7 +41,7 @@ body{
     width: 50%;
     display: grid;
     grid-template-columns: 1fr;  
-    z-index: 5;
+    z-index: 0;
     transition: 1s 0.7s ease-in-out;
 }
 
@@ -59,10 +59,12 @@ form{
 }
 form.sign-in-form{
     z-index: 2;
+    position: relative;
 }
 form.sign-up-form{
     z-index: 1;
     opacity: 0;
+    position: relative;
 }
 
 .title{
@@ -161,6 +163,7 @@ form.sign-up-form{
     justify-content: space-around;
     text-align: center;
     z-index: 7;
+    position: relative;
 
 }
 .panel-left{
@@ -179,15 +182,19 @@ form.sign-up-form{
     font-weight: 600;
     line-height: 1;
     font-size: 1.5rem;
+    color: #f0f0f0;
 }
 .panel p{
     font-size: 0.95rem;
     padding: 11px 0;
+    color: #f0f0f0;
 }
 .btn.transparent{
+    color: #f0f0f0;
     margin: 0;
     background: none;
     border: 2px solid #fff;
+    cursor: pointer;
     border-radius: 25px;
     width: 130px;
     height: 41px;
@@ -203,8 +210,6 @@ form.sign-up-form{
     transform: translateX(800px);
 
 }
-
-
 
 .container.sign-up-mode:before{
     transform: translate(100%,-50%);
