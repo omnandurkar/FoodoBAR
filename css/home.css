@@ -17,7 +17,7 @@ body{
 }
 
 .header{
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -72,6 +72,7 @@ body{
     background-color: white;
     /* border: 1px solid black; */
     box-shadow: 0 0 20px  rgb(240, 234, 234)
+    ani
     
 }
 
