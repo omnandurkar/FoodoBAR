@@ -431,8 +431,15 @@ body{
 .smenu-card1:hover{
     color: white;
     background-color: #ee2737;
+    
+    box-shadow: 5px 7px 20px 0px #ec7983;
+    transition: 0.4s ease-in;
+    transform: scale(0.9);
+    
 }
 
 .smenu-card1 button:hover{
     background-color: white;
+    
+    transition: 0.5s ease-in;
 }
