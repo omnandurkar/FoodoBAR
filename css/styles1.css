@@ -1,0 +1,90 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .restaurant-info {
+    text-align: center;
+    padding: 20px;
+    font-style: oblique;
+    background-color: black;
+    color: #f0f0f0;
+  }
+  
+  .visit-us {
+    
+    text-align: center;
+    padding: 40px 0;
+    
+  }
+  
+  .visit-us h2 {
+    margin-bottom: 20px;
+  }
+  
+  .video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px ;
+    border-color: white;
+    border-radius: 20px;
+  }
+  
+  .what-we-do {
+    text-align: center;
+    padding: 40px 0;
+    background-color: black;
+    color: #f0f0f0;
+  }
+  
+  .info-boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .info-box {
+    width: 200px;
+    text-align: center ;
+    text-align: justify;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: red;
+    font-size: medium;
+  }
+  .info-box1 { width: 200px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: red;
+    font-size: medium;
+  }
+.info-box2 {
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: red;
+    font-size: medium;
+  }
+  .info-box3{
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: red;
+    font-size: medium;
+  }
+  
+  
