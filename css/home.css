@@ -28,6 +28,7 @@ body{
     align-items: center;
     z-index: 100;
     margin-bottom: -52px;
+    z-index: 999;
 
 }
 
@@ -57,6 +58,7 @@ body{
     transition: .3s;
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
+    z-index: 999;
     
 }
 
@@ -70,6 +72,7 @@ body{
     background-color: white;
     /* border: 1px solid black; */
     box-shadow: 0 0 20px  rgb(240, 234, 234)
+    ani
     
 }
 
@@ -323,6 +326,11 @@ body{
      font-size: 13px;
 }
 
+
+/* <-----------------  OFFER ------------------> */
+
+
+
 .offer{
     background-image: url(../image/home-img/hom-mid1.jpg);
     background-size: cover;
@@ -351,4 +359,59 @@ body{
 .OFFER-TEXT h4{
     color: yellow;
     padding: 10px;
+}
+
+/* <-----------------  Our Special ------------------> */
+
+.smenu-block{
+    background-color: rgb(241, 239, 215);
+    display: flex;
+    flex-direction: column;
+}
+
+.smenu-title{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smenu-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.smenu-card1{
+    height: 400px;
+    width: 250px;
+    /* background-color: red; */
+    margin: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    /* background-color: rgb(241, 239, 215); */
+    border-radius: 20px;
+}
+
+.card-img img{
+    margin-top: -70px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.smenu-card1 h3{
+    margin-bottom: 20px;
+}
+
+.smenu-card1 p{
+    margin-bottom: 20px;
+    padding:10px;
 }
