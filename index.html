@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./CSS/home.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Home Page</title>
 </head>
 <body>
@@ -15,13 +16,13 @@
 
         <nav class="navbar">
             <a href="#"  style="--i:1" class="active">Home</a>
-            <a href="#" style="--i:2">Menu</a>
+            <a href="./pages/menu.html" style="--i:2">Menu</a>
             <a href="#" style="--i:3">Service</a>
             <a href="./pages/aboutindex.html" style="--i:4">About Us</a>
             <a href="./pages/contactindex.html" style="--i:5">Contact Us</a>
         </nav>
         
-        <a href="./pages/sign_in_up.html" class=" nav-btn btn" style="--i:5">Sign In/Up</a>
+        <a href="./pages/sigin_up_in.html" class=" nav-btn btn" style="--i:5">Sign In/Up</a>
     </header>
 
     <section class="home">
@@ -68,7 +69,10 @@
                 </div>
             </div>
             <div class="category-items">
-                <div class="cat-boxes">
+                <div data-aos="fade-right"
+                style="animation-delay: 0.5s; transition: 1s;"
+                
+                 class="cat-boxes">
                     <img src="./IMAGE/home-icons/burger.gif" height="63px">
                     <div class="cat-box-info">
                         <h2>Delish Burger</h2>
@@ -77,14 +81,20 @@
                     </div>
                     
                 </div>
-                <div class="cat-boxes">
+                <div data-aos="fade-right"
+                style="animation-delay: 0.5s; transition: 1s;"
+
+                 class="cat-boxes">
                     <img src="./IMAGE/home-icons/pizza.gif" height="63px">
                     <div class="cat-box-info">
                         <h2>Cheese Pizza</h2>
                         <p>25 items</p>
                     </div>
                 </div>
-                <div class="cat-boxes">
+                <div data-aos="fade-left"
+                style="animation-delay: 0.5s; transition: 1s;"
+
+                class="cat-boxes">
                     <img src="./IMAGE/home-icons/chicken.gif" height="63px">
                     <div class="cat-box-info">
                         <h2>Chicken Bucket</h2>
@@ -92,7 +102,10 @@
                         
                     </div>
                 </div>
-                <div class="cat-boxes">
+                <div data-aos="fade-left"
+                style="animation-delay: 0.5s; transition: 1s;"
+                
+                class="cat-boxes">
                     <img src="./IMAGE/home-icons/ramen.gif" height="63px">
                     <div class="cat-box-info">
                         <h2>Ichiraku Ramen</h2>
@@ -117,14 +130,29 @@
         </div>
     </div>
 
+    <!-- <=================== LOGO  ===============?> -->
+
+    <div class="logospin">
+        <div class="animatedlogo">
+            <img class="al1" src="./image/home-img/LOGO6.png" height="170px">
+            <img class="al2" src="./image/home-img/LOGO7.png" height="170px">
+        </div>
+    </div>
+
+
+
+
     <!-- <=================== Special  ===============?> -->
 
     <div class="special-menu">
         <div class="smenu-block">
             <div class="smenu-title">
-                <h1>Special Meun</h1>
+                <h1>Special Menu</h1>
             </div>
-            <div class="smenu-cards">
+            <div data-aos="fade-up"
+            style="transition: 1s;"
+            
+            class="smenu-cards">
                 <div class="smenu-card1">
                     <div class="card-img">
                         <img src="./image/home-img/smenu1.jpg">
@@ -171,7 +199,48 @@
     </div>
 
     <div class="flashbox">
-        flashy
+        <div class="flashycards">
+            <div data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            style="transition: 1s;"
+
+            class="flashcard">
+                <img src="./image/home-img/shinebanner1.png">
+            </div>
+            <div  data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            style="transition: 1s;"
+            
+            class="flashcard">
+                <img class="alt" src="./image/home-img/shinebanner2.png">
+            </div>
+        </div>
+    </div>
+
+     <!-- /* ++++++++++++++++++++++++  Reviews  ++++++++++++++++++++++++++ */ -->
+
+     <div class="review-section">
+        <div class="review-box">
+            <div class="review-box1">
+                <h3>Testimonials</h3>
+                <h1>What Clients Says</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p>sectetur obcaecati ullam voluptates exercitationem  atque velit.</p>
+                <a href="./pages/review.html" >
+                    <button class="review-section-btn btn">See More</button>
+                </a>
+            </div>
+            <div class="review-box2">
+                <h5>⭐⭐⭐⭐⭐</h5>
+                <div class="reviewer-photo">
+                    <img src="./images/Om-Nandurkar.jpg " height="100px" width="100px">
+                    <h2>Om Nandurkar</h2>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quia explicabo nostrum consectetur obcaecati ullam voluptates exercitationem tempora atque velit.</p>
+            </div>
+        </div>
     </div>
 
     <!-- <=================  FOOTER ==================> -->
@@ -276,6 +345,10 @@
     <script src='https://cdn.jsdelivr.net/npm/typed.js@2.0.12'></script>
     <script src="./JAVASCRIPT/home.js"></script>
     <script src="https://kit.fontawesome.com/ce469df88d.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     
 </body>
 </html>
