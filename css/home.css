@@ -61,6 +61,7 @@ body{
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
     z-index: 999;
+    opacity: 0;
     
 }
 
@@ -74,7 +75,7 @@ body{
     background-color: white;
     /* border: 1px solid black; */
     box-shadow: 0 0 20px  rgb(240, 234, 234)
-    ani
+    animation-delay: calc(.2s * var(--i))
     
 }
 
@@ -137,7 +138,7 @@ body{
     margin-right: -20px;
     margin-top: -330px;
     margin-bottom: -440px;
-    margin-left: 350px;
+    margin-left: 334px;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 2s, 3s;
@@ -145,14 +146,14 @@ body{
 
 .home-bg1{
     max-width: 1000px;
-    margin-left:392px ;
+    margin-left:372px ;
     margin-top: -672px;
     margin-bottom: -430px;
 }
 
 .home-bg2{
     max-width: 1000px;
-    margin-left: 534px;
+    margin-left: 538px;
     margin-top: -345px;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
@@ -200,7 +201,7 @@ body{
     font-weight: 600;
     opacity: 0;
     animation: slideTop 1s ease forwards;
-    animation-delay: 2s;
+    animation-delay: calc(.2s * var(--i));
     cursor: pointer;
 }
 
@@ -325,8 +326,28 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    transition: 0.5s ease-in-out;
 }
-.cat-boxes
+
+
+.cat-boxes {
+    --color: #ffffff;
+    --hover: #ee2737;
+}
+
+.cat-boxes img{
+    border-radius: 50%;
+    transition-duration: 1s;
+}
+
+
+
+
+.cat-boxes:hover,
+.cat-boxes:focus {
+  box-shadow: inset -14.5em 0 0 0 var(--hover);
+  color: white;
+}
 
 .cat-box-info{
     display: flex;
@@ -396,8 +417,8 @@ body{
 }
 
 .smenu-card1{
-    height: 400px;
-    width: 250px;
+    height: 413px;
+    width: 268px;
     /* background-color: red; */
     margin: 40px;
     padding: 20px;
@@ -409,11 +430,12 @@ body{
     /* background-color: rgb(241, 239, 215); */
     border-radius: 20px;
     cursor: pointer;
+    
 }
 
 .card-img img{
     margin-top: -70px;
-    height: 120px;
+    height: 150px;
     border-radius: 50%;
     padding: 10px;
     margin: 5px;
@@ -430,9 +452,43 @@ body{
 
 .smenu-card1:hover{
     color: white;
-    background-color: #ee2737;
+    /* background-color: #ee2737; */
+    
+    box-shadow: 5px 7px 20px 0px #ec7983;
+    transition: 0.5s ease-in-out;
+    transform: scale(0.9);
+    border: 1.1px solid white;
+    
 }
 
-.smenu-card1 button:hover{
+.smenu-card1:hover button{
     background-color: white;
+    color: #ee2737;
+    border: 1px solid #ee2737;
+    box-shadow: 0 0 10px  #ee2737;
 }
+
+.smenu-card1:hover,
+.smenu-card1:focus {
+  box-shadow: inset 0 -27.25em 0 0 var(--hover);
+
+}
+.smenu-card1{
+    --color: #e4cb58;
+    --hover: #ee2737;
+    transition: 0.5s ease-in-out;
+  }
+
+.smenu-card1:hover img{
+ animation-name: rotate; 
+animation-duration: 2s; 
+animation-iteration-count: infinite;
+animation-timing-function: linear;   
+}
+
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
