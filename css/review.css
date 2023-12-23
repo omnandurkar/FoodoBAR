@@ -16,23 +16,18 @@
     }
 
     .heading{
-        position: relative;
+        background-color: #333;
+        height:200px;
         width:100%;
-        height: auto;
-    }
-
-    .pic{
-        height:140px;
-        width: 100%;
+        text-align: center;
         
     }
 
-    .pic-text{
-        position: absolute;
-        top:40%;
-        left: 50%;
+    
+    .head-text{
+        padding-top: 60px;
+        padding-bottom: 20px;
         font-size: 30px;
-        transform: translate(-50%, -50%);
         color: white;
         font-family: 'Rubik', sans-serif;
     }
@@ -102,7 +97,7 @@
     
     .img{
         border-radius: 30px;
-        border:3px solid red;
+        border:2px solid red;
         height: 200px;
         width: 250px;
         
@@ -146,5 +141,5 @@
 
     }
 
-    
+   
 
