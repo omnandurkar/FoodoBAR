@@ -2,11 +2,11 @@
 *{
     text-decoration: none;
 }
-.navbar{
+.navbar1{
     background-color: white;
     
 }
-.navdiv{
+.navdiv1{
      display: flex;
      
 }
@@ -20,7 +20,7 @@ li a{
     font-weight: bold;
     margin-right: 50px;
 }
-.food-img{
+.food-img1{
     width:20px;
     height:20px;
     margin-right: 3px;
@@ -29,9 +29,7 @@ li a{
     width:20px;
     height:20px;
 }
-.filter{
-    justify-content: right;
-}
+
 .box{
     height:130px;
     width:180px;
@@ -44,7 +42,7 @@ li a{
 body{
     background-color: #f2f2f2;
 }
-.card{
+.card1{
     height:120px;
     width:220px;
     border: none;
@@ -59,108 +57,100 @@ body{
     padding-left: 10px;
     padding-right: 20px;
 }
-.food-name  {
+.food-name1  {
     font-weight: bold;  
     text-align: justify;
     padding-top: 17px;
 }
-.card{
+.card1{
     display: flex;
     flex-wrap: wrap;
     margin-left: 25px;
     margin-right: 25px;
 }
-.del{
+.del1{
     padding-top: 30px;
     padding-right: 30px;
 }
-.sub-name{
+.sub-name1{
     font-weight: normal;
     font-size: 13px;
 }
-.reg-price{
+.reg-price1{
     font-size: 13px;
     padding-left: 10px;
     display: block;
 }
-.price{
+.price1{
     font-weight: bold;
     font-size: large;
-    color: red;
+    color: #ee2737;
 }
-.btn{
+.btn1{
     height: 30px;
     width: 30px;
-    background-color: red;
+    background-color: #ee2737;
     color: white;
     border: none;
     border-radius: 5px 0px 5px 0px;
     font-size:large;
     margin-left:126px;
 }
-.container{
+.container1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 100px;
 }
 .class1:hover{
     background-color: #ffe6e6;
     width:90px;
     height: 80px;
-    color :red;
+    color :#ee2737;
 
 }
-.card:hover{
+.card1:hover{
     background-color: black;
     color: white;
 }
-.btn:hover{
+.bt1n:hover{
     background-color: white;
     color: black;
 }
-.filter-btn{
-    background-color: red;
-    color:black;
-    height: 30px;
-    width:80px;
-    border:none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-.filter-img{
-    height:15px;
-    width:15px;
-    color:white;
-    padding-top: 5px;
-}
-.order{
+.order1{
     display: flex;
     justify-content: center;
 }
-.img-bicycle{
+.img-bicycle1{
     height:150px;
 }
-.orderText{
+.orderText1{
    margin-right: 100px;
 }
-.track-img{
-    border:red solid 3px;
+.track-img1{
+    border:#ee2737 solid 3px;
+    margin-bottom: 150px;
 }
-.track-btn{
-    background-color: red;
+.track-btn1{
+    background-color: #ee2737;
     height:30px;
     width:120px;
     border:none;
-    border-radius: 5px;
+    border-radius: 25px;
+    color: white;
+    margin-bottom: 150px;
+}
+.track-btn1:hover{
+    background-color: black;
     color: white;
 }
 @media screen and (max-width:600px){
     
-.navbar{
+.navbar1{
     background-color: white;
     
 }
-.navdiv{
+.navdiv1{
      display: flex;
      flex-wrap: wrap;
      
@@ -176,7 +166,7 @@ li a{
     font-weight: bold;
    
 }
-.container{
+.container1{
     display: flex;
     flex-wrap: wrap;
 }
@@ -184,9 +174,9 @@ li a{
     background-color: #ffe6e6;
     width:40px;
     height: 20px;
-    color :red;}
+    color :#ee2737;}
 
-.food-img{
+.food-img1{
     width:20px;
     height:20px;
     margin-right: 3px;
@@ -195,10 +185,8 @@ li a{
     width:20px;
     height:20px;
 }
-.filter{
-    justify-content: right;
-}
-.box{
+
+.box1{
     justify-content: center;
     height:130px;
     width:400px;
@@ -211,7 +199,7 @@ li a{
 body{
     background-color: #f2f2f2;
 }
-.card{
+.card1{
     height:120px;
     width:220px;
     border: none;
@@ -226,46 +214,46 @@ body{
     padding-left: 10px;
     padding-right: 20px;
 }
-.food-name  {
+.food-name1  {
     font-weight: bold;  
     text-align: justify;
     padding-top: 17px;
 }
-.card{
+.card1{
     display: flex;
     flex-wrap: wrap;
     margin-left: 25px;
     margin-right: 25px;
 }
-.del{
+.del1{
     padding-top: 30px;
     padding-right: 30px;
 }
-.sub-name{
+.sub-name1{
     font-weight: normal;
     font-size: 13px;
 }
-.reg-price{
+.reg-price1{
     font-size: 13px;
     padding-left: 10px;
     display: block;
 }
-.price{
+.price1{
     font-weight: bold;
     font-size: large;
-    color: red;
+    color: #ee2737;
 }
-.btn{
+.btn1{
     height: 30px;
     width: 30px;
-    background-color: red;
+    background-color: #ee2737;
     color: white;
     border: none;
     border-radius: 5px 0px 5px 0px;
     font-size:large;
     margin-left:126px;
 }
-.container{
+.container1{
     display: flex;
     flex-wrap: wrap;
 }
@@ -273,47 +261,32 @@ body{
     background-color: #ffe6e6;
     width:90px;
     height: 80px;
-    color :red;
+    color :#ee2737;
 
 }
-.card:hover{
+.card1:hover{
     background-color: black;
     color: white;
 }
-.btn:hover{
+.btn1:hover{
     background-color: white;
     color: black;
 }
-.filter-btn{
-    background-color: red;
-    color:black;
-    height: 30px;
-    width:80px;
-    border:none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-.filter-img{
-    height:15px;
-    width:15px;
-    color:white;
-    padding-top: 5px;
-}
-.order{
+.order1{
     display: flex;
     justify-content: center;
 }
-.img-bicycle{
+.img-bicycle1{
     height:150px;
 }
-.orderText{
+.orderText1{
    margin-right: 100px;
 }
-.track-img{
-    border:red solid 3px;
+.track-img1{
+    border:#ee2737 solid 3px;
 }
-.track-btn{
-    background-color: red;
+.track-btn1{
+    background-color: #ee2737;
     height:30px;
     width:120px;
     border:none;
@@ -322,13 +295,13 @@ body{
 }
 }
 @media screen and (min-width:600px) and (max-width:800px){
-    .container{
+    .container1{
         display: flex;
     }
-    .navbar{
+    .navbar1{
         background-color: white; 
     }
-    .navdiv{
+    .navdiv1{
          display: flex;    
     }
     li{
@@ -341,7 +314,7 @@ body{
         font-weight: bold;
         margin-right: 30px;
     }
-    .food-img{
+    .food-img1{
         width:20px;
         height:20px;
         margin-right: 3px;
@@ -351,7 +324,7 @@ body{
         height:20px;
     }
     
-    .box{
+    .box1{
         justify-content: center;
         height:130px;
         width:400px;
@@ -364,7 +337,7 @@ body{
     body{
         background-color: #f2f2f2;
     }
-    .card{
+    .card1{
         height:120px;
         width:220px;
         border: none;
@@ -379,39 +352,39 @@ body{
         padding-left: 10px;
         padding-right: 20px;
     }
-    .food-name  {
+    .food-name1  {
         font-weight: bold;  
         text-align: justify;
         padding-top: 17px;
     }
-    .card{
+    .card1{
         display: flex;
         flex-wrap: wrap;
         margin-left: 25px;
         margin-right: 25px;
     }
-    .del{
+    .del1{
         padding-top: 30px;
         padding-right: 30px;
     }
-    .sub-name{
+    .sub-name1{
         font-weight: normal;
         font-size: 13px;
     }
-    .reg-price{
+    .reg-price1{
         font-size: 13px;
         padding-left: 10px;
         display: block;
     }
-    .price{
+    .price1{
         font-weight: bold;
         font-size: large;
-        color: red;
+        color: #ee2737;
 }
 .class1:hover{
     background-color: #ffe6e6;
     width:40px;
     height: 20px;
-    color :red;
+    color :#ee2737;
 
 }}
