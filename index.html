@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./CSS/home.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Home Page</title>
 </head>
 <body>
@@ -68,7 +69,10 @@
                 </div>
             </div>
             <div class="category-items">
-                <div class="cat-boxes">
+                <div data-aos="fade-right"
+                style="animation-delay: 0.5s; transition: 1s;"
+                
+                 class="cat-boxes">
                     <img src="./IMAGE/home-icons/burger.gif" height="63px">
                     <div class="cat-box-info">
                         <h2>Delish Burger</h2>
@@ -77,14 +81,20 @@
                     </div>
                     
                 </div>
-                <div class="cat-boxes">
+                <div data-aos="fade-right"
+                style="animation-delay: 0.5s; transition: 1s;"
+
+                 class="cat-boxes">
                     <img src="./IMAGE/home-icons/pizza.gif" height="63px">
                     <div class="cat-box-info">
                         <h2>Cheese Pizza</h2>
                         <p>25 items</p>
                     </div>
                 </div>
-                <div class="cat-boxes">
+                <div data-aos="fade-left"
+                style="animation-delay: 0.5s; transition: 1s;"
+
+                class="cat-boxes">
                     <img src="./IMAGE/home-icons/chicken.gif" height="63px">
                     <div class="cat-box-info">
                         <h2>Chicken Bucket</h2>
@@ -92,7 +102,10 @@
                         
                     </div>
                 </div>
-                <div class="cat-boxes">
+                <div data-aos="fade-left"
+                style="animation-delay: 0.5s; transition: 1s;"
+                
+                class="cat-boxes">
                     <img src="./IMAGE/home-icons/ramen.gif" height="63px">
                     <div class="cat-box-info">
                         <h2>Ichiraku Ramen</h2>
@@ -124,7 +137,10 @@
             <div class="smenu-title">
                 <h1>Special Meun</h1>
             </div>
-            <div class="smenu-cards">
+            <div data-aos="fade-up"
+            style="transition: 1s;"
+            
+            class="smenu-cards">
                 <div class="smenu-card1">
                     <div class="card-img">
                         <img src="./image/home-img/smenu1.jpg">
@@ -172,10 +188,20 @@
 
     <div class="flashbox">
         <div class="flashycards">
-            <div class="flashcard">
+            <div data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            style="transition: 1s;"
+
+            class="flashcard">
                 <img src="./image/home-img/shinebanner1.png">
             </div>
-            <div class="flashcard">
+            <div  data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            style="transition: 1s;"
+            
+            class="flashcard">
                 <img class="alt" src="./image/home-img/shinebanner2.png">
             </div>
         </div>
@@ -283,6 +309,10 @@
     <script src='https://cdn.jsdelivr.net/npm/typed.js@2.0.12'></script>
     <script src="./JAVASCRIPT/home.js"></script>
     <script src="https://kit.fontawesome.com/ce469df88d.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     
 </body>
 </html>
