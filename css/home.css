@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
 * {
   margin: 0;
   padding: 0;
@@ -492,3 +494,56 @@ animation-timing-function: linear;
     to {transform: rotate(360deg);}
 }
 
+
+/* <=========================  FLASH CARDS  =====================> */
+
+.flashbox{
+    background-color: rgb(241, 239, 215);
+    margin-top: -30px;
+    padding-top: 60px;
+}
+
+.flashycards{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 30px;
+}
+
+.flashcard{
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.flashcard img{
+    --a: 0deg; /* control the angle of rotation (the smaller, the better) */
+    /* width: 250px; */
+    aspect-ratio: 1;
+    border-radius: 20px;
+    transform: perspective(400px) rotate3d(var(--r,1,-1),0,calc(var(--i,1)*var(--a)));
+    -webkit-mask: 
+      linear-gradient(135deg,#000c 40%,#000,#000c 60%)
+      100% 100%/250% 250%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.flashcard img:hover {
+    --i: -1;
+    -webkit-mask-position: 0 0;
+    transform: scale(0.9);
+    
+  }
+  .alt:hover {
+    -webkit-mask-position: 100% 0;
+  }
+
+.alt {
+    --r: 1,1;
+    -webkit-mask: 
+      linear-gradient(45deg,#000c 40%,#000,#000c 60%)
+      0 100%/250% 250%;
+  }
+  
