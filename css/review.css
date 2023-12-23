@@ -53,8 +53,9 @@
     }
 
     .btn2:hover{
-        background-color: red;
-        box-shadow: 3px 3px rgb(236, 88, 88) ;
+        background-color:white;
+        color: #ee2737;
+        box-shadow: 0 0 10px red;
         cursor: pointer;
     }
 
@@ -97,7 +98,7 @@
     
     .img{
         border-radius: 30px;
-        border:4px solid red;
+        border:3px solid red;
         height: 200px;
         width: 250px;
         
@@ -107,7 +108,7 @@
     .img:hover{
         border-radius: 30px;
         border:2px solid red;
-        box-shadow: 2px 1px 2px 2px  red;
+        box-shadow: 0 0 10px  #ee2737;
         cursor: pointer;
 
     }
@@ -117,29 +118,31 @@
         display: flex;
         justify-content: center;
         flex-direction: row;
-        /*background-color: rgb(245, 237, 225);*/
-        height:100px;
+        height:40px;
     }
 
     .btn{
-        height:30px;
-        width:110px;
-        background-color: red;
-        color: white;
-        border-radius: 5px;
+       
         
-
-    }
-
-    .btn:hover{
-       box-shadow: 2px 2px rgb(248, 60, 60);
-       background-color:red;
+        background:  #ee2737;
+        border-radius: 40px;
+        /* box-shadow: 0 0 10px  rgb(255, 0, 0); */
+        font-size: 16px;
+        /* color: #1f242d; */
         color: white;
-        border-radius: 5px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-weight: 200;
+        animation: slideTop 1s ease forwards;
+        animation-delay: calc(.2s * var(--i));
         cursor: pointer;
-        
-
     }
-
+    
+    .btn:hover{
+        background-color: white;
+        color: #ee2737;
+        border: 1px solid #ee2737;
+        box-shadow: 0 0 10px  #ee2737;
+    }
    
 
