@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap');
+
 
 
 
@@ -300,7 +302,8 @@ body{
     align-items: center;
     justify-content: space-around;
     width: 99vw;
-    background-color: rgb(241, 239, 215);
+    /* background-color: rgb(241, 239, 215); */
+    background-color: #f4f1ea;
 
     height: 400px;
 
@@ -368,15 +371,16 @@ body{
 
 
 
-/* <-----------------  OFFER ------------------> */
+/* <-----------------  LOGO SPIN ------------------> */
 
 
 .logospin{
-    background-color:  rgb(241, 239, 215);
+    /* background-color:  rgb(241, 239, 215); */
+    background-color: #f4f1ea;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .logospin .al1{
@@ -437,7 +441,8 @@ body{
 /* <-----------------  Our Special ------------------> */
 
 .smenu-block{
-    background-color: rgb(241, 239, 215);
+    /* background-color: rgb(241, 239, 215); */
+    background-color: #f4f1ea;
     display: flex;
     flex-direction: column;
 }
@@ -537,9 +542,11 @@ animation-timing-function: linear;
 /* <=========================  FLASH CARDS  =====================> */
 
 .flashbox{
-    background-color: rgb(241, 239, 215);
+    /* background-color: rgb(241, 239, 215); */
+    background-color: #f4f1ea;
     margin-top: -30px;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .flashycards{
@@ -597,7 +604,8 @@ animation-timing-function: linear;
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    height: 650px;
+    height: 550px;
+    
     
 }
 
@@ -609,6 +617,7 @@ animation-timing-function: linear;
     flex-direction: row;
     justify-content: center;
     padding: 10px;
+    margin-top: -90px;
     /* justify-content: space-between; */
 }
 
@@ -621,7 +630,7 @@ animation-timing-function: linear;
 }
 
 .review-box2{
-    width: 450px;
+    width: 550px;
     background-color: #f3f1f5;
     padding:  30px 10px 70px 10px;
     text-align: left;
@@ -643,7 +652,8 @@ animation-timing-function: linear;
 
 .reviewer-photo img{
     margin: 10px;
-    margin-right: 30px;
+    /* margin-right: 30px; */
+    margin-left: 5px;
 }
 
 .reviewer-photo h2{
@@ -652,7 +662,7 @@ animation-timing-function: linear;
 
 .review-box2 h5{
     margin-bottom: -3px;
-    margin-left: 3px;
+    /* margin-left: 53px; */
 }
 
 .review-box1 h3{
@@ -699,3 +709,56 @@ animation-timing-function: linear;
     text-decoration: none;
     transition: 0.7s ease-in;
 } */
+
+
+/* <=====================  SCROLLING TEXT ======================> */
+
+.scrolling-text-block{
+    height: 150px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -80px;
+    margin-bottom: 20px;
+    background-color: #f4f1ea;
+    /* background-color: rgb(241, 239, 215); */
+}
+
+
+
+  .marquee {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    /* position: absolute; */
+   
+
+  }
+  
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 40s linear infinite;
+    color: #000;
+    font: 800 80px 'Barlow Condensed', sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    background-color: transparent;
+  }
+  
+  /* .marquee2 span {
+    animation-delay: 2.5s;
+    animation: marquee 28s linear infinite;
+
+  } */
+  
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
