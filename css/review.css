@@ -48,7 +48,7 @@
     .btn2{
         background-color: red;
         color: white;
-        height: 30px;
+        height: 40px;
         width: 220px;
         border-radius: 10px;
         border: none;
@@ -189,6 +189,7 @@
         font-size: larger;
         cursor: pointer;
         
+        
     }
 
     .btn3:hover{
@@ -212,7 +213,7 @@
         .rating > label {
         position: relative;
         width: 1.1em;
-        font-size: 30px;
+        font-size: 70px;
         color: #FFD700;
         cursor: pointer;
         }
@@ -232,7 +233,25 @@
         opacity:1;
         }
         
-        .rating:hover > input:checked ~ label:before{ opacity: 0.4; }
+        .rating:hover > input:checked ~ label:before{ opacity: 0.4;
+}
+
+.rating-static{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+}
+
+.customer-rating-container{
+    height: 300px;
+}
+
+
+
+     
+
+
+
         
         
         
