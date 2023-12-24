@@ -4,8 +4,9 @@
 }
 .navbar1{
     background-color: white;
-    margin-top: 10px;
+    margin-top: 100px;
     height: 60px;
+    margin-bottom: 30px;
     
 }
 .navdiv1{
@@ -13,10 +14,16 @@
      margin-left: 50px;
      padding-top: 7px;    
 }
+
+.navdiv1{
+    justify-content: center;
+}
+
 li{
     list-style: name;
 
     display: inline-block;
+    
 }
 li a{
     color:BLACK;
@@ -71,6 +78,8 @@ body{
     flex-wrap: wrap;
     margin-left: 25px;
     margin-right: 25px;
+    margin-bottom: 25px;
+    transition: .5s ease-in-out;
 }
 .del1{
     padding-top: 30px;
@@ -98,13 +107,15 @@ body{
     border: none;
     border-radius: 5px 0px 5px 0px;
     font-size:large;
-    margin-left:126px;
+    margin-left:119px;
 }
 .container1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 100px;
+    width: 90vw;
+    margin-left: 100px;
 }
 .class1:hover{
     background-color: #ffe6e6;
@@ -118,9 +129,20 @@ body{
     margin-left: 20px;
 }
 .card1:hover{
-    background-color: black;
+    background-color: #ee2737;
     color: white;
+    transform: scale(1.1);
 }
+
+.card1:hover .btn1{
+background-color: white;
+color: red;
+}
+.card1:hover .price1{
+/* background-color: white; */
+color: rgb(0, 0, 0);
+}
+
 .bt1n:hover{
     background-color: white;
     color: black;
@@ -151,6 +173,10 @@ body{
 .track-btn1:hover{
     background-color: black;
     color: white;
+}
+
+.container1{
+    margin-bottom: 100px;
 }
 @media screen and (max-width:600px){
     
