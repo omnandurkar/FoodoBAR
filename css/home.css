@@ -635,7 +635,13 @@ animation-timing-function: linear;
     padding:  30px 10px 70px 10px;
     text-align: left;
     padding: 50px;
+    transition: 0.6s ease-in-out;
+    transform: scale(0.9);
 
+}
+
+.review-box2:hover{
+    transform: scale(1);
 }
 
 .reviewer-photo{
