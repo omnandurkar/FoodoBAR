@@ -543,7 +543,8 @@ animation-timing-function: linear;
 
 .flashbox{
     /* background-color: rgb(241, 239, 215); */
-    background-color: #f4f1ea;
+    /* background-color: #f4f1ea; */
+    background-color: white;
     margin-top: -30px;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -552,7 +553,7 @@ animation-timing-function: linear;
 .flashycards{
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
     padding: 20px;
     margin: 30px;
@@ -561,6 +562,7 @@ animation-timing-function: linear;
 .flashcard{
     overflow: hidden;
     cursor: pointer;
+    margin: 0px 30px;
 }
 
 .flashcard img{
@@ -603,7 +605,8 @@ animation-timing-function: linear;
     text-align: center;    
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: #f4f1ea;
     height: 550px;
     
     
@@ -631,12 +634,14 @@ animation-timing-function: linear;
 
 .review-box2{
     width: 550px;
-    background-color: #f3f1f5;
+    /* background-color: #f3f1f5; */
+    background-color: white;
     padding:  30px 10px 70px 10px;
     text-align: left;
     padding: 50px;
     transition: 0.6s ease-in-out;
     transform: scale(0.9);
+    border-radius: 5px;
 
 }
 
@@ -728,7 +733,8 @@ animation-timing-function: linear;
     text-align: center;
     margin-top: -80px;
     margin-bottom: 20px;
-    background-color: #f4f1ea;
+    /* background-color: #f4f1ea; */
+    background-color: white;
     /* background-color: rgb(241, 239, 215); */
 }
 
@@ -768,3 +774,52 @@ animation-timing-function: linear;
       transform: translate(-100%, 0);
     }
   }
+
+ /* <!-- <=========== MOBILE APPP ===============> -->  */
+
+ .mobile{
+    background-color: #f4f1ea;
+ }
+ .mobilebox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    
+    margin-bottom: 0px;
+
+ }
+
+ .mobdesc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    /* text-align: left; */
+    
+
+ }
+
+ .mobdesc h1{
+    color: #ee2737;
+    margin-left: 10px;
+    margin-bottom: 15px;
+ }
+
+ .mob-img img{
+    margin-left: 160px;
+    margin-right: -270px;
+    /* animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s; */
+    transition: 1s ease-in-out;
+ }
+
+ .mob-img{
+    height: 508px;
+    width: 849px;
+    transition: 2s ease;
+    animation-delay: 3s;
+ }
+
+ 
