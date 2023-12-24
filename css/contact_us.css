@@ -1,0 +1,469 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body{
+      /* background: #3c99cf; */
+      color: #000000;
+  
+  }
+
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    /* background: transparent; */
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    margin-bottom: -52px;
+    z-index: 999;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 50px 1px rgb(46, 42, 42);
+
+
+}
+
+.logo{
+    font-size: 25px;
+    color: #000000;
+    text-decoration: none;
+    margin-left: -600px;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    margin-left: -11px;
+}
+
+.navbar{
+    margin-left: -100px;
+}
+
+.navbar a{
+    display: inline-block;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    z-index: 999;
+    opacity: 0;
+    transition: 0.3s ease-in
+    
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color:  #ee2737;
+    /* transition: 0.3s ease-in;
+    transform: scale(1.1); */
+    font-size: 21px;
+}
+
+.hx:hover{
+    transition: 0.3s ease-in;
+    transform: scale(1.1);
+    
+}
+
+.header .nav-btn {
+    /* color: #ee2737;
+    background-color: white;
+    border: 1px solid black; */
+    /* box-shadow: 0 0 20px  rgb(240, 234, 234); */
+    animation-delay: calc(.2s * var(--i));
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    background:  #ee2737;
+    border-radius: 40px;
+    /* box-shadow: 0 0 10px  rgb(255, 0, 0); */
+    font-size: 16px;
+    /* color: #1f242d; */
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    /* animation-delay: 2s; */
+    
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: white;
+    color: #ee2737;
+    border: 1px solid #ee2737;
+    box-shadow: 0 0 10px  #ee2737;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-24px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/* ........ */
+body{
+    background-color:#f0f0f0;
+    font-family: sans-serif;
+    background-image: url(../image/);
+
+}
+/* contact us-bottom */
+.container{
+    margin: 50px auto;
+    width: 80%;
+
+}
+.contact-box{
+    display: flex;
+    background-color: #333;
+    border-radius: 5px;
+    
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+    
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px ;
+    background-color:  #333;
+    color: #f0f0f0;
+    border-radius: 5px;
+
+}
+h1{
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+p{
+    margin-bottom: 25px;
+}
+h3{
+    margin-bottom: 10px;
+    color: #f0f0f0;
+    font-weight: 400;
+}
+.h3-title{
+    font-size: 24px;
+    font-weight: 800;
+    font-family: sans-serif;
+    /* margin-bottom: 25px; */
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.input-row .input-group{
+    flex-basis: 45%;
+
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    outline: none;
+    padding-bottom: 10px;
+    background-color: #333;
+    color: #f0f0f0;
+    margin-bottom: 10px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+label{
+    margin-bottom: 8px;
+    display: block;
+    color: #f0f0f0;
+}
+button{
+    background:  #ee2723;
+    color: #f0f0f0;
+    width: 100px;
+    border: none;
+    height: 25px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 0px rgb(231, 39, 39);
+}
+.contact-right-1{
+    height: 85%;
+    width: 90%;
+    background-color: #ee2723;
+    padding: 10px;
+    border-radius: 15px;
+    align-items: center;
+    margin-top:-10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+    box-shadow: 0px 0px 5px 0px rgb(231, 39, 39);
+    
+
+}
+tr td:first-child{
+    padding-right: 10px;
+}
+tr td{
+    padding-bottom: 30px;
+}
+i{
+    font-size: 14px;
+    padding-right:2px ;
+}
+
+/* flash cards */
+
+.card-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.card-container-1{
+    display: flex;
+    flex-direction: row;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: auto;
+    padding: 50px 180px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.card{
+    height: 170px;
+    background-color: #f0f0f0;
+    width: 250px;
+    padding: 10px;
+    border-radius:10px ;
+    align-items: center;
+    box-shadow: 0px 0px 5px 0px black;
+    
+    position: relative;
+    
+}
+.card:hover{
+    background-color: #ee2723;
+    transition: 0.3s ease;
+}
+
+ .card-image{
+    height: 50px;
+    width:100px ;
+}
+.fa-location-dot{
+    font-size: 40px;
+    margin-left: 80px;
+    margin-top: -80px;
+    border:2px solid #ee2723;
+    border: none;
+    outline: none;
+    border-radius: 80% ;
+    padding: 10px 15px   ;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.fa-calendar-week{
+    font-size: 40px;
+    margin-left: 65px;
+    margin-top: -40px;
+    margin-bottom: 15px;
+    border:2px solid #ee2723;
+    border: none;
+    outline: none;
+    border-radius: 80% ;
+    padding: 10px 15px   ;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 5px 0px black;
+}
+.fa-phone-volume{
+    font-size: 40px;
+    margin-left: 80px;
+    margin-top: -80px;
+    margin-bottom: 15px;
+    border:2px solid #ee2723;
+    border: none;
+    outline: none;
+    border-radius: 80% ;
+    padding: 10px 15px   ;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 5px 0px black;
+
+}
+.fa-comments{
+    font-size: 35px;
+    margin-left: 80px;
+    margin-top: -80px;
+    margin-bottom: 15px;
+    border:2px solid #ee2723;
+    border: none;
+    outline: none;
+    border-radius: 80% ;
+    padding: 10px 15px   ;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 5px 0px black;
+}
+.card-para{
+    padding: 0px 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+/*headings*/
+
+.heading{
+    /* background-color: #333; */
+    height:400px;
+    width:100%;
+    text-align: center;
+    /* margin-top:80px; */
+    margin-bottom: 20px;
+    padding-top: 70px;
+    background-image: url(../image/signin_up/pizza-with-slice-being-taken-out-it_861605-5.jpg);
+    object-fit: contain;
+    
+}
+
+
+.head-text{
+    padding-top: 60px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.button-head{
+    position: absolute;
+    top:60%;
+    left: 50%;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+.btn2{
+    background-color: #ee2723;
+    color: white;
+    height: 30px;
+    width: 220px;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn2:hover{
+    background-color:white;
+    color: #ee2737;
+    box-shadow: 0 0 10px red;
+    cursor: pointer;
+}
+
+
