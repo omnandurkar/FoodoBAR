@@ -10,7 +10,8 @@
     font-family: 'Montserrat', sans-serif;
     font-family: 'Rubik', sans-serif;
 
-} */body{
+} */
+body{
         padding:0;
         margin: 0;
     }
@@ -48,7 +49,7 @@
     .btn2{
         background-color: red;
         color: white;
-        height: 30px;
+        height: 40px;
         width: 220px;
         border-radius: 10px;
         border: none;
@@ -71,7 +72,7 @@
         /*background-color: rgb(245, 237, 225);*/
         padding-top: 40px;
         display: flex;
-        justify-content:space-evenly;
+        justify-content:center;
         flex-direction: row;
 
         
@@ -87,33 +88,62 @@
         
     }
 
+    .review-img{
+        margin-right: 50px;
+    }
+
     .desc-img{
-        font-family: 'Montserrat', sans-serif;
+        font-family: ;
+        width: 400px;
+        text-align: left;
+        font-family: 'Rubik', sans-serif;
+        width: 509px;
+               margin-right: -120px
+    }
+    .desc-img2{
+        font-family: ;
+        width: 509px;
+        text-align: right;
+        font-family: 'Rubik', sans-serif;
+        margin-right: 50px;
+        margin-left: 180px;
                
     }
 
+
+
+    .desc-img2 p{
+        font-family: 'Rubik', sans-serif;
+        font-weight: 100;
+    }
+
+    .desc-img p{
+        font-family: 'Rubik', sans-serif;
+        font-weight: 100;
+    }
+
     .pgh{
-        text-align: center;
+        text-align: left;
         text-wrap: wrap;
     }
 
     
     .img{
-        border-radius: 30px;
-        border:4px solid red;
-        height: 200px;
-        width: 250px;
+        border-radius: 5px;
+        /* border:4px solid red; */
+        height: 350px;
+        /* width: 250px; */
         
         
     }
 
-    .img:hover{
+    /* .img:hover{
         border-radius: 30px;
         border:2px solid red;
         box-shadow: 0 0 10px  #ee2737;
         cursor: pointer;
 
-    }
+    } */
 
 
     .button{
@@ -169,16 +199,7 @@
         margin-bottom: 60px;
     }
 
-    .rating-img{
-        height: 40px;
-        width: 40px;
-    }
-
-    .rating-img:hover{
-        background-color:goldenrod;
-        cursor: pointer;
-        box-shadow:2px 2px 5px yellow ;
-    }
+   
 
     .btn3{
         height: 40px;
@@ -189,6 +210,7 @@
         font-size: larger;
         cursor: pointer;
         
+        
     }
 
     .btn3:hover{
@@ -196,6 +218,88 @@
         color: red;
         box-shadow: 0 0 10px  #ee2737;;
     }
+
+    /* <=====================Review Star=========> */
+
+    .rating {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+
+        }
+        
+        
+        .rating > input{ display:none;}
+        
+        .rating > label {
+        position: relative;
+        width: 1.1em;
+        font-size: 70px;
+        color: #FFD700;
+        cursor: pointer;
+        }
+        
+        .rating > label::before{
+        content: "\2605";
+        position: absolute;
+        opacity: 0;
+        }
+        
+        .rating > label:hover:before,
+        .rating > label:hover ~ label:before {
+        opacity: 1 !important;
+        }
+        
+        .rating > input:checked ~ label:before{
+        opacity:1;
+        }
+        
+        .rating:hover > input:checked ~ label:before{ opacity: 0.4;
+}
+
+.rating-static{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+}
+
+.customer-rating-container{
+    height: 300px;
+}
+
+
+
+/* <===================== HOVER OVER IMAGES ===========> */
+
+
+
+        
+.rating-img{
+    height: 40px;
+    width: 40px;
+    /* animation: 1s ease-in-out; */
+    
+}
+
+.rating-img:hover{
+    /* background-color:goldenrod; */
+    cursor: pointer;
+    box-shadow:2px 2px 5px yellow ;
+    /* transform: scale(0.9); */
+}
+     
+
+.img{
+    /* animation: 2s ease-in-out; */
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    transform: scale(0.9);
+    box-shadow: 15px 15px 39px 0px rgb(46, 43, 43);
+    animation-delay: ;
+}
+.img:hover{
+    transform: scale(0.8);
+}
 
 
 
