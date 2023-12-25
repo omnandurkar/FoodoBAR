@@ -341,13 +341,16 @@ i{
     border-radius:10px ;
     align-items: center;
     box-shadow: 0px 0px 5px 0px black;
-    
+    transition: .5s ease-in-out;
     position: relative;
+    animation: slideDown 5s ease forwards;
+    animation-delay: 2s;
     
 }
 .card:hover{
     background-color: #ee2723;
     transition: 0.3s ease;
+    transform: scale(1.1);
 }
 
  .card-image{
